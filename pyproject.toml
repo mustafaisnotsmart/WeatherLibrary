@@ -1,0 +1,20 @@
+
+
+[build-system]
+requires = ["flit_core >=2,<3"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.metadata]
+module = "weatherlib"
+author = "Mustafa A"
+author-email = "@gmail.com"
+home-page = "https://github.com/mustafaisnotsmart/weather-lib"
+description-file = "README.md"
+requires-python = ">=2.7"
+keywords = "weather,lookup,temperature"
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Text Processing",
+    "Topic :: Text Processing :: General",
+    "Topic :: Text Processing :: Linguistic",
+]
