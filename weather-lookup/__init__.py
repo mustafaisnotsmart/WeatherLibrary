@@ -21,7 +21,8 @@ def condition(location):
     
     weather = res.text
     dict=json.loads(weather)
-    betterdict = dict["main"]
-    temperature = betterdict["temp"]
-    farhenhiettemp = 9 / 5 * (temperature - 273) + 32
-    return int(farhenhiettemp)
+    betterdict = dict["weather"]
+    objectzero = betterdict[0]
+    description = objectzero["description"]
+
+    return description.title()
