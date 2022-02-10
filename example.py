@@ -1,4 +1,4 @@
-from weather-lookup import *
+from WeatherLookup import *
 
-print(temperature("Dubia"))
+print(temperature("Dubai"))
 
