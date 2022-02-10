@@ -7,9 +7,10 @@ import json
 token = "101d9b88089c209d67d9ae493ba1f4c7"
 def temperature(location):
     res = requests.get(f"https://api.openweathermap.org/data/2.5/weather?q={location}&appid={token}")
-    
     weather = res.text
     dict=json.loads(weather)
+    if "main" not in dict:
+        return False
     betterdict = dict["main"]
     temperature = betterdict["temp"]
     farhenhiettemp = 9 / 5 * (temperature - 273) + 32
