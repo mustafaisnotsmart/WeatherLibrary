@@ -24,3 +24,11 @@ DubaiWeather = WeatherLookup.temperature('Dubai')
 print(DubaiWeather)
 
 ```
+
+```Python
+import WeatherLookup
+
+DubaiCondition = WeatherLookup.condition('Dubai')
+print(DubaiCondition)
+
+```
